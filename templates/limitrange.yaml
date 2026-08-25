@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: limitRange
+metadata: 
+  name: capstone-limits
+spec:
+  limits:
+    - default:
+        cpu : {{.Values.limitRange.defaultCpu}}
+        memory: {{.Values.limitRange.defaultMemory}}
+      defaultRequest:
+        cpu: {{.Values.limitRange.defaultRequestCpu}}
+        memory: {{.Values.limitRange.defaultRequestMemory}}
+      type: container
+      

@@ -1,0 +1,15 @@
+quota:
+  requestsCpu: "2"
+  requestsMemory: 2Gi
+  limitCpu: "4"
+  limitMemory: 4Gi
+  maxPods: "20"
+
+limitRange:
+  defaultCpu: "200m"
+  defaultMemory: "256Mi"
+  defaultRequestCpu: "100m"
+  defaultRequestMemory: "128Mi"
+
+db:
+  password: amolgore8090

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata: 
+  name: capstone-quota
+spec:
+  hard:
+    request.cpu : {{.Values.quota.requestCpu}}
+    request.memory: {{.Values.quota.requestMemory}}
+    limits.cpu: {{.Values.quota.limitCpu}}
+    limits.memory: {{.Values.quota.limitMemory}}
+    pods : {{.Values.quota.maxPods}}
