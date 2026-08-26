@@ -25,3 +25,28 @@ postgres:
     limits:
       cpu: "500m"
       memory: "512Mi"
+
+frontend:
+  replicas: 3
+  tag: "1.27"
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "128Mi"
+    limits:
+      cpu: "200m"
+      memory: "256Mi"
+
+backend:
+  replicas: 3
+  tag: "2.4"
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "128Mi"
+    limits:
+      cpu: "200m"
+      memory: "256Mi"
+
+ingress: 
+  host: capstone.local
