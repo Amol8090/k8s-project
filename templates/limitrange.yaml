@@ -10,5 +10,5 @@ spec:
       defaultRequest:
         cpu: {{.Values.limitRange.defaultRequestCpu}}
         memory: {{.Values.limitRange.defaultRequestMemory}}
-      type: container
+      type: Container
       
