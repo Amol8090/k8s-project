@@ -12,7 +12,7 @@ limitRange:
   defaultRequestMemory: "128Mi"
 
 db:
-  password: 
+  password: amolgore8090
   
 postgres:
   replicas: 1
