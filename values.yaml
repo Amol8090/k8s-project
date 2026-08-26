@@ -12,4 +12,16 @@ limitRange:
   defaultRequestMemory: "128Mi"
 
 db:
-  password: amolgore8090
+  password: 
+  
+postgres:
+  replicas: 1
+  tag: "16"
+  storage: 5Gi
+  resources:
+    requests:
+      cpu: "250m"
+      memory: "256Mi"
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
