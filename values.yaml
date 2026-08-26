@@ -29,6 +29,10 @@ postgres:
 frontend:
   replicas: 3
   tag: "1.27"
+  hpa:
+    min: 3
+    max: 8
+    targetCpu: 50
   resources:
     requests:
       cpu: "100m"
@@ -40,6 +44,10 @@ frontend:
 backend:
   replicas: 3
   tag: "2.4"
+  hpa:
+    min: 3
+    max: 8
+    targetCpu: 50
   resources:
     requests:
       cpu: "100m"
