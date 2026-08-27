@@ -4,8 +4,8 @@ metadata:
   name: capstone-quota
 spec:
   hard:
-    request.cpu : {{.Values.quota.requestsCpu}}
-    request.memory: {{.Values.quota.requestsMemory}}
+    requests.cpu : {{.Values.quota.requestsCpu}}
+    requests.memory: {{.Values.quota.requestsMemory}}
     limits.cpu: {{.Values.quota.limitCpu}}
     limits.memory: {{.Values.quota.limitMemory}}
     pods : {{.Values.quota.maxPods}}
